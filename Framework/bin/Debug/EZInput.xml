@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EZInput</name>
+    </assembly>
+    <members>
+        <member name="M:EZInput.Keyboard.IsKeyPressed(EZInput.Key)">
+            <summary>
+            Returns true if the key is pressed, false otherwise
+            </summary>
+            <param name="key">The key of which we want to check the state</param>
+        </member>
+        <member name="M:EZInput.Keyboard.SendKeyUp(EZInput.Key)">
+            <summary>
+            Simulates key being released after sending key down
+            </summary>
+            <param name="keyCode">The key which we want to unpress</param>
+        </member>
+        <member name="M:EZInput.Keyboard.SendKeysUp(EZInput.Key[])">
+            <summary>
+            Simulates multiple keys being released at once after sending keys down
+            </summary>
+            <param name="keyCodes">The keys which we want to release</param>
+        </member>
+        <member name="M:EZInput.Keyboard.SendKeyDown(EZInput.Key)">
+            <summary>
+            Simulates key being pressed down (and it stays that way until sending key up)
+            </summary>
+            <param name="keyCode">The key which we want to press down</param>
+        </member>
+        <member name="M:EZInput.Keyboard.SendKeysDown(EZInput.Key[])">
+            <summary>
+            Simulates multiple keys being pressed down at once (and they stay that way until sending keys up)
+            </summary>
+            <param name="keyCodes">The keys which we want to press down</param>
+        </member>
+        <member name="M:EZInput.Keyboard.SendKeyPress(EZInput.Key)">
+            <summary>
+            Simulates a keypress
+            </summary>
+            <param name="keyCode">The key which we want to press</param>
+        </member>
+        <member name="M:EZInput.Keyboard.SendKeyPress(System.Int32,EZInput.Key)">
+            <summary>
+            Simulates a keypress for a specific period of time
+            </summary>
+            <param name="milliseconds">For how long the key should be pressed</param>
+            <param name="keyCode">The key which we want to press</param>
+        </member>
+        <member name="M:EZInput.Keyboard.SendKeyPresses(EZInput.Key[])">
+            <summary>
+            Simulates multiple keypresses at once
+            </summary>
+            <param name="keyCodes">The keys which we want to press</param>
+        </member>
+        <member name="M:EZInput.Keyboard.SendKeyPresses(System.Int32,EZInput.Key[])">
+            <summary>
+            Simulates multiple keypresses at once for a specific period of time
+            </summary>
+            <param name="milliseconds">For how long the keys should be pressed</param>
+            <param name="keyCodes">The keys which we want to press></param>
+        </member>
+        <member name="M:EZInput.Mouse.IsButtonPressed(EZInput.MouseButton)">
+            <summary>
+            Returns true if the button is pressed, false otherwise
+            </summary>
+            <param name="button">The button of which we want to check the state</param>
+        </member>
+        <member name="M:EZInput.Mouse.SetCursorPosition(System.Int32,System.Int32)">
+            <summary>
+            Sets the cursor position to the passed coordinates
+            </summary>
+            <param name="x">X coordinate in pixels</param>
+            <param name="y">Y coordinate in pixels</param>
+        </member>
+        <member name="M:EZInput.Mouse.GetCursorPosition">
+            <summary>
+            Returns the current cursor position
+            </summary>
+        </member>
+        <member name="M:EZInput.Mouse.Click(EZInput.MouseButton,System.Int32,System.Int32)">
+            <summary>
+            Simulates a mouse click at the passed coordinates
+            </summary>
+            <param name="click">Mouse button to click</param>
+            <param name="x">X coordinate in pixels</param>
+            <param name="y">Y coordinate in pixels</param>
+        </member>
+        <member name="M:EZInput.Mouse.Click(EZInput.MouseButton)">
+            <summary>
+            Simulates a mouse click
+            </summary>
+            <param name="click">Mouse button to click</param>
+        </member>
+        <member name="M:EZInput.Mouse.DoubleClick(EZInput.MouseButton)">
+            <summary>
+            Simulates a mouse double click
+            </summary>
+            <param name="click">Mouse button to click</param>
+        </member>
+        <member name="M:EZInput.Mouse.ClickDown(EZInput.MouseButton)">
+            <summary>
+            Simulates mouse button being clicked down (and it stays that way until clicking button up)
+            </summary>
+            <param name="click">Mouse button to click down</param>
+        </member>
+        <member name="M:EZInput.Mouse.ClickUp(EZInput.MouseButton)">
+            <summary>
+            Simulates mouse button being released after clicking button down
+            </summary>
+            <param name="click">Mouse button to release</param>
+        </member>
+    </members>
+</doc>
